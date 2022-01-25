@@ -26,7 +26,7 @@ npm install inquirer
 This project is used by inputting `node index.js`  Then all prompts are answered with the relevant information. A README is then written in a file named generated-README.md.
 
 ### Demonstration
-[![Demonstration Video](./assets/DemonstrationGif.gif)](https://drive.google.com/file/d/1OZf6Tfr3Kl5roKIgANp68BbHqQtPyVs5/view?usp=sharing)]
+[![Demonstration Video](./assets/DemonstrationGif.gif)](https://drive.google.com/file/d/1OZf6Tfr3Kl5roKIgANp68BbHqQtPyVs5/view?usp=sharing)
 
 
 ## Credits
