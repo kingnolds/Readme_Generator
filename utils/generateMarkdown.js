@@ -39,11 +39,12 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 
-function renderLicenseSection(license) {
+function renderLicenseSection(license) { 
   let licenseText = ''
   switch (license) {
     case 'MIT':
-      licenseText = `MIT License
+      licenseText = `## License
+      MIT License
 
       Copyright (c) [${new Date().getFullYear()}] [fullname]
       
@@ -66,7 +67,8 @@ function renderLicenseSection(license) {
       SOFTWARE.`
       break;
     case 'GNU GPLv3':
-      licenseText = `                    GNU GENERAL PUBLIC LICENSE
+      licenseText = `## License
+                          GNU GENERAL PUBLIC LICENSE
       Version 3, 29 June 2007
 
 Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
@@ -689,7 +691,8 @@ copy of the Program in return for a fee.
     END OF TERMS AND CONDITIONS`
     break;
     case 'Apache License 2.0':
-      licenseText = `                                 Apache License
+      licenseText = `## License
+                                       Apache License
       Version 2.0, January 2004
    http://www.apache.org/licenses/
 
@@ -892,7 +895,8 @@ See the License for the specific language governing permissions and
 limitations under the License.`
       break;
     case 'ISC':
-      licenseText = `ISC License
+      licenseText = `## License
+      ISC License
 
       Copyright (c) [${new Date().getFullYear()}] [fullname]
       
@@ -931,9 +935,7 @@ ${data.install}
 ${data.usage}
 ## Credits
 ${data.credits}
-## License
-
-
+${renderLicenseSection(data.license)}
 `;
 }
 

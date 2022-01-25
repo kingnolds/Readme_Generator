@@ -1,44 +1,22 @@
-# README Generator
+# Demonstration
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-
-This application generates a professional README markdown file based on inputs from the user in a command line to a series of prompts. 
+This is a demonstration of the README generator
 ## Table of Contents
-
 - [Installation](#install)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-
 ## Install
-
-With nodeJS installed run these commands in the terminal
-
-`
-npm i 
-`  
-
-`
-npm install inquirer
-`
+none
 ## Usage
-
-This project is used by inputting `node index.js`  Then all prompts are answered with the relevant information. A README is then written in a file named generated-README.md.
-
-### Demonstration
-
+To demonstrate
 ## Credits
-
-Spencer Nelson  
-nodeJS https://nodejs.org/en/  
-Professional README Guide https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide  
-Choose a License https://choosealicense.com/  
-
-
+Spencer Nelson
 ## License
       MIT License
 
-      Copyright (c) [2022] [Spencer Nelson]
+      Copyright (c) [2022] [fullname]
       
       Permission is hereby granted, free of charge, to any person obtaining a copy
       of this software and associated documentation files (the "Software"), to deal

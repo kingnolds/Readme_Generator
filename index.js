@@ -36,22 +36,22 @@ const questions = [
         name: 'license',
         choices: ['MIT', 'GNU GPLv3', 'Apache License 2.0', 'ISC', 'None']
     },
-    {
-        type: 'list',
-        message: 'Do you want to add the Contributor Covenant?',
-        name: 'contribute',
-        choices: ['Yes', 'No']
-    },
-    {
-        type: 'input',
-        message: 'Write any tests for your project.',
-        name: 'test',
-    },
+    // {
+    //     type: 'list',
+    //     message: 'Do you want to add the Contributor Covenant?',
+    //     name: 'contribute',
+    //     choices: ['Yes', 'No']
+    // },
+    // {
+    //     type: 'input',
+    //     message: 'Write any tests for your project.',
+    //     name: 'test',
+    // },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(`${fileName}.md`, data, (err) => err ? console.error(err) : console.log('Input Logged'))
+    fs.writeFile(`${fileName}.md`, generateMarkdown(data), (err) => err ? console.error(err) : console.log('Input Logged'))
 }
 
 // TODO: Create a function to initialize app
@@ -59,8 +59,7 @@ function init() {
     inquirer
     .prompt (questions)
     .then ((data) => {
-       const markdown = generateMarkdown(data)
-       writeToFile('README', markdown)
+       writeToFile('generated-README', data)
     })
     
 }
